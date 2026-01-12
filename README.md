@@ -1,12 +1,12 @@
-📦 Order Management API (Spring Boot)
-📌 Overview
+Order Management API (Spring Boot)
+ Overview
 
 The Order Management API is a monolithic backend application built using Spring Boot that supports end-to-end order processing for an e-commerce–style system.
 It manages products, inventory, and orders, ensuring transactional consistency between order placement and inventory reservation.
 
 This project demonstrates real-world backend concepts such as layered architecture, database transactions, global exception handling, and RESTful API design.
 
-🏗 Architecture
+Architecture
 
 This application follows a clean layered monolithic architecture:
 
@@ -23,7 +23,7 @@ com.ashmitha.ordermanagement
 ├── exception         # Global exception handling
 └── OrderManagementApiApplication.java
 
-🛠 Tech Stack
+ Tech Stack
 
 Java 25
 
@@ -41,7 +41,7 @@ Maven
 
 Postman (API testing)
 
-✨ Features
+ Features
 
 Create and manage products
 
@@ -57,7 +57,7 @@ Global exception handling with meaningful API responses
 
 RESTful API design with proper HTTP status codes
 
-📚 Database Design
+Database Design
 
 Main tables:
 
@@ -77,7 +77,7 @@ Inventory is released when an order is cancelled
 
 Orders and inventory updates occur within a single transaction
 
-🔗 API Endpoints
+ API Endpoints
 ➤ Product APIs
 Method	Endpoint	Description
 POST	/api/products	Create a product
@@ -87,7 +87,7 @@ Method	Endpoint	Description
 POST	/api/orders	Place a new order
 GET	/api/orders/{id}	Get order by ID
 POST	/api/orders/{id}/cancel	Cancel an order
-📥 Sample Requests
+Sample Requests
 Create Product
 {
   "sku": "SKU-1001",
@@ -108,8 +108,7 @@ Place Order
 
 Cancel Order
 POST /api/orders/1/cancel
-
-❗ Error Handling
+ Error Handling
 
 The application uses global exception handling (@RestControllerAdvice) to return consistent JSON error responses.
 
@@ -124,7 +123,7 @@ Example:
 
 This prevents leaking stack traces and improves API usability.
 
-▶️ How to Run Locally
+ How to Run Locally
 Prerequisites
 
 Java 25 installed
@@ -153,7 +152,7 @@ Run As → Spring Boot App
 
 Test APIs using Postman
 
-🎯 What This Project Demonstrates
+ What This Project Demonstrates
 
 Real-world backend development practices
 
@@ -165,7 +164,7 @@ Database consistency
 
 Professional API error handling
 
-📌 Future Enhancements
+ Future Enhancements
 
 Authentication & Authorization (Spring Security)
 
