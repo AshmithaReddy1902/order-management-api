@@ -25,7 +25,7 @@ com.ashmitha.ordermanagement
 
  Tech Stack
 
-Java 25
+Java 17
 
 Spring Boot
 
@@ -166,12 +166,9 @@ Professional API error handling
 
  Future Enhancements
 
-Authentication & Authorization (Spring Security)
-
 Pagination and filtering
 
 Swagger / OpenAPI documentation
 
 Dockerization
 
-CI/CD pipeline
