@@ -123,6 +123,26 @@ Example:
 
 This prevents leaking stack traces and improves API usability.
 
+## Security
+
+- Authentication: HTTP Basic Authentication (Spring Security)
+- Authorization: Role-based access control
+
+### Roles
+- ADMIN: create/update/delete products, manage inventory
+- USER: place and view orders
+
+### Protected Endpoints
+- POST /api/orders
+- POST /api/orders/{id}/cancel
+- POST /api/products
+- PUT /api/products/{id}
+- DELETE /api/products/{id}
+
+### Public Endpoints
+- GET /api/products/**
+
+
  How to Run Locally
 Prerequisites
 
